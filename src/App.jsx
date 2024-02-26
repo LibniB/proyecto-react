@@ -5,15 +5,29 @@ import './App.css'
 import Tabla from './components/Tabla'
 import Formulario from './components/Formulario'
 import Modal from './components/Modal'
+import Nuevo from './components/Nuevo'
+
+const personas =[
+  {nombre:"libni",apellido:"Bernarte"},
+  {nombre:"maria",apellido:"peralta"},
+  {nombre:"olga",apellido:"betancourth"}
+]
+
 function App() {
   
-
   return (
     <div>
-    <Tabla/>
-    <Formulario/>
-    <Modal/>
+    
+    {personas.map((persona => (  
+        <div key={persona.id}>
+          <h2>{persona.nombre}</h2>
+          <h2>{persona.apellido}</h2>
+        </div>
+      )
+        ))
+    }
     </div>
+
   )
 }
 

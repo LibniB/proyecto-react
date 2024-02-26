@@ -1,8 +1,8 @@
 const Tabla = () => {
     return (
-    <div>
-      <table>
-        <thead>
+    <div className="container">
+      <table className="table table-bordered">
+        <thead className="table-dark">
           <tr>
             <th>ID</th>
             <th>Área de Conocimiento</th>
@@ -12,9 +12,9 @@ const Tabla = () => {
         </thead>
         <tbody>
           <tr>
-            <td>.</td>
-            <td>.</td>
-            <td></td>
+            <td>1</td>
+            <td>Matematica</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quis? </td>
             <td></td>
           </tr>
           <tr>
